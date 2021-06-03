@@ -13,18 +13,18 @@ permissions:
   
 hooks:
   BeforeInstall:
-    - location: clean.sh
+    - location: scripts/clean.sh
       tiemout: 500
       runas: root
   AfterInstall:
-    - location: permissions.sh
+    - location: scripts/permissions.sh
       tiemout: 500
       runas: root
   ApplicationStart:
-    - location: start.sh
+    - location: scripts/start.sh
       tiemout: 500
       runas: root
   ApplicationStop:
-    - location: stop.sh
+    - location: scripts/stop.sh
       tiemout: 500
       runas: root
