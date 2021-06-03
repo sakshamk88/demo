@@ -4,6 +4,10 @@ phases:
   install:
     runtime-versions:
       java: corretto11
+  pre_build:
+    commands:
+      - echo Giving permissions
+      - chmod 777 gradlew
   build:
     commands:
       - ./gradlew bootJar
