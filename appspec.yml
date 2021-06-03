@@ -14,18 +14,18 @@ permissions:
   
 hooks:
   BeforeInstall:
-    - location: scripts/clean.sh
-    - tiemout: 500
-    - runas: ec2-user
+    - location: clean.sh
+      tiemout: 500
+      runas: ec2-user
   AfterInstall:
-    - location: scripts/permissions.sh
-    - tiemout: 500
-    - runas: ec2-user
+    - location: permissions.sh
+      tiemout: 500
+      runas: ec2-user
   ApplicationStart:
-    - location: scripts/start.sh
-    - tiemout: 500
-    - runas: ec2-user
+    - location: start.sh
+      tiemout: 500
+      runas: ec2-user
   ApplicationStop:
-    - location: scripts/stop.sh
-    - tiemout: 500
-    - runas: ec2-user
+    - location: stop.sh
+      tiemout: 500
+      runas: ec2-user
