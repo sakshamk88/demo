@@ -11,6 +11,6 @@ public class SampleController {
 	
 	@GetMapping(value = "/test")
 	public ResponseEntity<String> tester(){
-		return new ResponseEntity<String>("The app deployment works!", HttpStatus.OK);
+		return new ResponseEntity<String>("The app deployment works.", HttpStatus.OK);
 	}
 }
